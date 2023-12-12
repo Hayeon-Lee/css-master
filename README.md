@@ -18,6 +18,10 @@
 
 3.  flex-direction
 
+    - 기본 방향은 row, 수직은 column이다.
+
     - main axis: flex-direction과 같은 방향 -> **justify-content**
 
     - cross axis: flex-direction과 수직인 방향 -> **align-items**
+
+    - 정렬과 관련된 프로퍼티들은 축이 변하면 해당 축에서 적용된다.
