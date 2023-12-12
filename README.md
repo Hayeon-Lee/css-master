@@ -8,4 +8,16 @@
 
 2.  flexbox
 
-    -
+    - 규칙
+
+      i. 자식 요소가 아닌, 직속 부모 요소에 프로퍼티를 적는다.
+
+      ii. 방향에 따른 프로퍼티를 적절하게 써주어야 한다.
+
+      iii. 자식들이 공통적으로 갖는 특성은 부모 속성 안에 넣어줄 것
+
+3.  flex-direction
+
+    - main axis: flex-direction과 같은 방향 -> **justify-content**
+
+    - cross axis: flex-direction과 수직인 방향 -> **align-items**
