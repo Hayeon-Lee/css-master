@@ -85,7 +85,7 @@
   ```
 
 - <details>
-    <summary>cssl 코드</summary>
+    <summary>css 코드</summary>
 
   ```css
   @import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
