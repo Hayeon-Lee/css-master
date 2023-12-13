@@ -28,7 +28,7 @@
 
     - 컨테이너가 한 줄인지 다중 줄인지를 정해주는 요소이다.
 
-    - 기본값: nowrap 이기때문에 flex box는 기본적으로 한 줄에 모든 요소를 넣고자 한다.
+    - 기본값: nowrap 이기 때문에 flex box는 기본적으로 한 줄에 모든 요소를 넣고자 한다.
 
     - wrap으로 바꿀 시: 한 줄이 아닌 여러 줄로 요소를 배치한다.
 
@@ -41,3 +41,14 @@
     - flex-flow: row wrap
 
       -> flex-direction은 가로, 요소들은 여러 줄로 나타난다.
+
+6. grid
+
+    - display: grid 로 설정 가능하다.
+
+    ```css
+        display: grid;
+        grid-template-columns: 100px 200px;
+        grid-template-rows: 200px 100px;
+        gap: 10px;
+    ```
