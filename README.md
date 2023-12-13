@@ -89,3 +89,55 @@
         grid-column: tomato / lemon;
         /*tomato 라인부터 lemon 라인까지 그려진다.*/
     ```
+
+8. grid template
+
+    - grid의 비율을 픽셀로 하드코딩 하지 않아도 된다.
+
+    - grid-template-columns는 기본적으로 viewport를 기준으로 나뉜다.
+
+    - grid-template-rows는 세로줄이 기준인데, 이는 끝이 없기 떄문에 height를 지정해줘야 한다.
+
+    ```css
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+        height: 100px;
+
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    ```
+
+    - **grid-template-areas**
+
+        - 행과 열을 미리 정할 수 있다.
+
+        - 템플릿을 정해준 뒤에는, 해당 자리에 넣을 요소의 css에 grid-area로 특성을 적어줘야 한다.
+
+    ```css
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+        grid-template-rows: 1fr 1fr 1fr;
+
+        grid-template-areas: 
+        "header header header header
+         content content content menu 
+         footer footer footer footer";
+    ```
+
+    ```css
+        header{
+            grid-area: header;
+        }
+
+        box{
+            grid-area: content;
+        }
+
+    ```
+    위처럼 row와 column을 하나하나 정해주지 않고, 더 간단하게 적을 수 있다.
+    ```css
+        grid-template: "a a a a" 1fr
+        "b b b c" 2fr
+        "d d d d" 1fr / 1fr 1fr 1fr 1fr;
+
+        /*위처럼 적으면, 행과 열의 크기를 하나하나 지정해주지 않고 행의 크기 열의 크기를 한 번에 grid-template 안에 적을 수 있다.*/
+    ```
