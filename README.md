@@ -73,4 +73,19 @@
         /*가로줄의 시작을 1번 라인으로 결정한다.*/
     ```
 
-7. 
+7. grid의 line name
+
+    - [] 안에 이름을 적어준다. 아래의 코드를 참고한다.
+
+    ```css
+        grid-template-columns: [tomato] 100px [banana] 200px [berry] 50px [lemon];
+    ```
+
+    - 위의 코드대로 작성하면, 개발자 모드에서 컬럼의 이름을 확인할 수 있다.
+
+    - 라인의 이름을 결정하면, 코드를 더욱 직관적으로 작성할 수 있어 편리하다.
+
+    ```css
+        grid-column: tomato / lemon;
+        /*tomato 라인부터 lemon 라인까지 그려진다.*/
+    ```
