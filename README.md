@@ -213,4 +213,23 @@
     }
     ```
 
-11.
+11. Align and Justify Items
+
+    - grid cell 안에 있는 요소가 width와 height를 가질 경우 적용 가능하다.
+
+    ```css
+    justify-items: stretch;
+    /*default: stretch
+     그리드 셀 안의 내용물을 가로 방향 정렬
+    */
+
+    align-items: stretch;
+    /*default: stretch
+    그리드 셀 안의 내용물을 세로 방향 정렬*/
+
+    place-items: end end;
+    /*align과 justify를 한 번에 지정 가능*/
+
+    place-self: start end;
+    /*이 요소를 갖는 개체 자체의 algin과 justify를 한 번에 지정 가능*/
+    ```
