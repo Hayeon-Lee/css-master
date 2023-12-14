@@ -250,3 +250,23 @@
     ```
 
     **items 는 grid 안의 아이템을, content는 grid 자체를 정렬한다.**
+
+13. auto sizing and minmax
+
+    - 내용물의 사이즈에 따라 열 크기를 조절할 수 있는 키워드
+
+    ```css
+    grid-template-columns: 1fr max-content 1fr;
+    /*두 번째 열은 내부 내용물 총 길이만큼 넓어진다*/
+    ```
+
+    ```css
+    grid-template-columns: 1fr min-content 1fr;
+    /*두 번째 열은 내부 내용물의 가장 긴 단어의 길이만큼 넓어진다*/
+    ```
+
+    - 화면이 변하여도 가운데 열이 250px보다는 작아지지 않아야한다.
+
+    ```css
+    grid-template-columns: 1fr minmax(250px, 1fr) 1fr;
+    ```
