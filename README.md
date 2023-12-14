@@ -233,3 +233,20 @@
     place-self: start end;
     /*이 요소를 갖는 개체 자체의 algin과 justify를 한 번에 지정 가능*/
     ```
+
+12. Align and Justify Content
+
+    - 그리드 컨테이너 자체를 정렬하는 것
+
+    ```css
+    align-content: center;
+    /*세로에 남는 공간이 생길 경우, 그리드 컨테이너가 세로 중앙 정렬된다.*/
+
+    justify-content: center;
+    /*가로에 남는 공간이 생길 경우, 그리드 컨테이너가 가로 중앙 정렬*/
+
+    place-content: start end;
+    /*align-content와 justify-content를 한 번에 정렬할 수 있다.*/
+    ```
+
+    **items 는 grid 안의 아이템을, content는 grid 자체를 정렬한다.**
