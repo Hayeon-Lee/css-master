@@ -270,3 +270,15 @@
     ```css
     grid-template-columns: 1fr minmax(250px, 1fr) 1fr;
     ```
+
+14. Auto Fill and Auto Fit
+
+    - 반응형 그리드를 생성할 수 있다. repeat()와 함께 쓰인다.
+
+    - auto-fit: 남는 공간을 축소한다. 지정한 모양을 무시하고 남는 공간을 모두 없애서 꽉 채워버린다.
+
+    - auto-fill: 남는 공간을 유지한다. 빈 공간을 지정한 셀로 최대한 채운다. 속이 비어있어도 컨테이너를 가능한 많이 채운다.
+
+    ```css
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    ```
