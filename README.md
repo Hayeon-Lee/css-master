@@ -117,9 +117,10 @@
 
     grid-template-rows: 1fr 1fr 1fr;
 
-    grid-template-areas: 'header header header header
-         content content content menu 
-         footer footer footer footer';
+    grid-template-areas: 
+         'header header header header'
+         'content content content menu'
+         'footer footer footer footer';
     ```
 
     ```css
