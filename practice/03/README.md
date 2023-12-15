@@ -14,11 +14,19 @@
 2. 아쉬운 점
 
 - **grid에 대해서 자세히 모르는 것 같다**
-- 해결방안: 티스토리에 조금 더 정리해서 업로드한 뒤, 해당 리드미에 링크 걸기
+- 해결방안: ~~티스토리에 조금 더 정리해서 업로드한 뒤, 해당 리드미에 링크 걸기~~
+
+  -> 블로그에 정리를 모두 해보았고, 결론적으로 grid 에 대해 어려운 개념들이 전부 이해가 되었다.
+
+3. 아쉬운 점을 해결한 블로그 링크
+
+- https://tooyoung.tistory.com/253
+- https://tooyoung.tistory.com/254
+- https://tooyoung.tistory.com/255
 
 <br />
 
-3. 코드
+4. 코드
 
 - <details>
         <summary>html 코드</summary>
