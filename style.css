@@ -5,19 +5,28 @@ body {
     Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.wrapper {
-  display: grid;
-  grid-template-rows: 100px;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 10px;
-
-  background-color: aliceblue;
+.father {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  flex-flow: row wrap;
 }
 
-.wrapper :nth-child(odd) {
-  background-color: aquamarine;
+.box {
+  height: 200px;
+  color: white;
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.wrapper :nth-child(even) {
-  background-color: palevioletred;
+.box:first-child{
+background-color: tomato;
+flex-grow: 1;
+}
+
+.box:last-child{
+background-color: aqua;
+flex-grow: 2;
 }
