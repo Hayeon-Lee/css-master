@@ -92,3 +92,37 @@
       }
     }
     ```
+
+
+3. @extend
+
+    1. 요소를 상속한다.
+
+    2. 사용 예시
+
+    * % 를 붙여 상속할 공통 속성을 정의
+    * %가 붙은 속성을 사용하고 싶다면 @extend %() 로 활용 가능
+
+        ```scss
+        %alert {
+            margin: 10px;
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: 1px dashed black;
+        }
+
+        .success{
+            @extend %alert;
+            background-color: aqua;
+        }
+
+        .error{
+            @extend %alert;
+            background-color: yellow;
+        }
+
+        .warning{
+            @extend %alert;
+            background-color: tomato;
+        }
+        ```

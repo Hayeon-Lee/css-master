@@ -5,29 +5,24 @@ body {
     Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-  display: flex;
-  gap: 10px;
+%alert {
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px dashed black;
+}
 
-  li {
-      background-color: tomato;
-      color: white;
-      padding: 5px 10px;
-      border-radius: 7px;
+.success{
+  @extend %alert;
+  background-color: aqua;
+}
 
-      &:hover {
-        opacity: 0.8;
+.error{
+  @extend %alert;
+  background-color: yellow;
+}
 
-        a:hover {
-          color: grey;
-        }
-      }
-
-      a {
-      text-decoration: none;
-      color: white;
-      }
-    }
+.warning{
+  @extend %alert;
+  background-color: tomato;
 }
