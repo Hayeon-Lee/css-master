@@ -126,3 +126,30 @@
             background-color: tomato;
         }
         ```
+
+4. Mixins
+
+    1. 속성에 변수를 전달하여 함수처럼 사용할 수 있다.
+
+    2. 사용 예시
+    ```scss
+    @mixin alert($bgColor) {
+        margin: 10px;
+        padding: 10px 20px;
+        border-radius: 10px;
+        border: 1px dashed black;
+        background-color: $bgColor;
+    }
+
+    .success{
+        @include alert(green);
+    }
+
+    .error{
+        @include alert(red);
+    }
+
+    .warning{
+        @include alert(yellow);
+    }
+    ```
