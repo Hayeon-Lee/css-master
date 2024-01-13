@@ -153,3 +153,88 @@
         @include alert(yellow);
     }
     ```
+
+5. responsive Mixins 
+
+    1. @content는 하위 mixin을 사용한 요소가 {} 안에 적은 모든 것을 가져온다.
+        ```scss
+        @mixin alert($bgColor, $borderColor) {
+            margin: 10px;
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: 1px dashed black;
+            background-color: $bgColor;
+            border: 1px dashed $borderColor;
+            @content;
+        }
+
+        .success{
+            @include alert(green, grey){
+                font-size: 12px;
+            }
+        }
+
+        .error{
+            @include alert(red, grey){
+                text-decoration: underline;
+            }
+        }
+
+        .warning{
+            @include alert(yellow, grey){
+                text-transform: uppercase;
+            }
+        }
+        ```
+
+    2. body에서 만들어둔 mixin을 사용하면 화면 크기에 따라 배경색을 바꿀 수 있다.
+
+        ```scss
+            $breakpoint-sm: 480px;
+            $breakpoint-md: 768px;
+            $breakpoint-lg: 1024px;
+            $breakpoint-xl: 1200px;
+
+            @mixin smallDevice {
+                @media screen and (min-width: $breakpoint-sm){
+                    @content;
+                }
+            }
+
+            @mixin mediumDevice {
+                @media screen and (min-width: $breakpoint-md) {
+                    @content;
+                }
+            }
+
+            @mixin largeDevice {
+                @media screen and (min-width: $breakpoint-lg){
+                    @content;
+                }
+            }
+
+            @mixin xlDevice {
+                @media screen and (min-width: $breakpoint-xl){
+                    @content;
+                }
+            }
+
+            body {
+                @include smallDevice{
+                    background-color: blue;
+                }
+
+                @include mediumDevice{
+                    background-color: antiquewhite;
+                }
+
+                @include largeDevice{
+                    background-color: purple;
+                }
+
+                @include xlDevice{
+                    background-color: cornflowerblue;
+                }
+            }
+        
+        ```
