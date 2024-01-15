@@ -15,15 +15,13 @@ CSS 심화를 공부하고, 직접 과제를 해봄으로써 CSS 작성 능력�
 ## 3. 연습 결과물
 
 1. <a href="practice\01"> 설명과 소스코드 </a>
-<img src="practice\01\image.png" />
+   <img src="practice\01\image.png" />
 
 2. <a href="practice\02"> 설명과 소스코드 </a>
-<img src="practice\02\image.png" />
+   <img src="practice\02\image.png" />
 
 3. <a href="practice\03"> 설명과 소스코드 </a>
-<img src="practice\03\image.png" />
+   <img src="practice\03\image.png" />
 
-
-
-
-
+4. <a href="practice\04"> 설명과 소스코드 </a>
+   <img src="practice\04\image.png" />
